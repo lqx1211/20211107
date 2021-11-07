@@ -1,0 +1,23 @@
+package Random;
+import java.util.Scanner;
+
+public class TEXT1 {
+	public static void main(String []args) {
+	Scanner in = new Scanner(System.in);
+	int num =(int)Math.random()*100+1;//[1,100]
+	int a = in.nextInt();
+	while(true) {
+	if(a==num ) {
+		System.out.println("waooooo!");
+		break;
+	}else if(a<num){
+		System.out.println("小了再来::::");
+		a=in.nextInt();
+	}else {
+		System.out.println("大了再来::::");
+		a=in.nextInt();
+	}
+	
+	}
+}
+}
